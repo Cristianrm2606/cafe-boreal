@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+  namespace: cafe-boreal
+data:
+  POSTGRES_DB: cafeboreal
+  POSTGRES_USER: postgres
