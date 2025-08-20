@@ -1,0 +1,15 @@
+{
+  "name": "cafe-boreal-frontend",
+  "version": "1.0.0",
+  "description": "Panel Admin para Café Boreal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.5.0"
+  },
+  "author": "Café Boreal",
+  "license": "MIT"
+}
