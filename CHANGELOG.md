@@ -69,3 +69,43 @@
 - Microservicios completamente operativos
 - APIs probadas y funcionando via port-forward
 - Conectividad completa con PostgreSQL y cifrado
+
+## [v5-Observabilidad] - 2025-08-20
+
+### Added
+- ✅ Prometheus + cAdvisor recolectando métricas del cluster
+- ✅ Grafana con dashboard de CPU/Memory por pod y logs
+- ✅ Loki + Promtail para centralización de logs
+- ✅ Consultas por etiquetas funcionando: {namespace="cafe-boreal"}
+- ✅ Pruebas de carga: 2 perfiles (lectura intensiva + cifrado)
+- ✅ Backups y restore verificados y reproducibles
+- ✅ SLA interno definido (99.5% disponibilidad, p95 <500ms)
+
+### Observability Stack
+- **Prometheus**: Métricas de cluster y aplicaciones
+- **Grafana**: Dashboard centralizado (puerto 5555)
+- **Loki**: Agregación de logs centralizados  
+- **Promtail**: Agente de recolección de logs
+- **cAdvisor**: Métricas de contenedores (parcial)
+
+### Load Testing Results
+- Catalog API: 50 requests de lectura intensiva
+- Customers API: 30 requests con operaciones de cifrado
+- Health checks: 300 requests totales sin errores
+- Todas las APIs respondieron correctamente post-carga
+
+### SLA Proposed
+- Disponibilidad: ≥ 99.5% (4.38h downtime permitido/mes)
+- Latencia p95: ≤ 500ms para todas las APIs
+- MTTR: ≤ 15 minutos para incidentes
+- Presupuesto de error: 0.5% mensual
+
+### Responsables
+- Estudiante 1: [Cristian]
+- Estudiante 2: [Justin]
+
+### Alcance
+- Observabilidad completa operativa
+- Dashboards configurados y accesibles
+- Pruebas de rendimiento documentadas
+- Backups/restore validados

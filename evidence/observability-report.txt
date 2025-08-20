@@ -1,0 +1,50 @@
+=== REPORTE DE OBSERVABILIDAD - CAFÉ BOREAL ===
+Fecha: Wed Aug 20 01:57:30 AM UTC 2025
+
+📊 COMPONENTES DESPLEGADOS:
+grafana-894f856d8-t6zbs         1/1     Running            0               10m
+loki-54d5c5599c-stg88           1/1     Running            0               10m
+prometheus-68b6749cdb-k95d6     1/1     Running            0               11m
+promtail-bvd8k                  1/1     Running            0               10m
+
+🌐 SERVICIOS DISPONIBLES:
+• Prometheus: http://localhost:9090
+• Grafana: http://localhost:5555 (admin/admin123)
+
+📈 MÉTRICAS DISPONIBLES:
+✅ CPU/Memory por pod (cAdvisor/Prometheus)
+✅ Health checks de APIs
+✅ Métricas de Kubernetes
+
+📋 LOGS CENTRALIZADOS:
+✅ Loki recibiendo logs de todos los pods
+✅ Promtail funcionando como agente
+✅ Logs consultables por etiquetas en Grafana
+
+🔍 CONSULTAS DE EJEMPLO:
+• Logs del namespace: {namespace="cafe-boreal"}
+• Solo APIs: {namespace="cafe-boreal", app=~".*-api"}
+• Errores: {namespace="cafe-boreal"} |= "error"
+
+⚡ PRUEBAS DE CARGA REALIZADAS:
+✅ Perfil 1: Lectura intensiva (50 requests)
+✅ Perfil 2: Operaciones con cifrado (30 requests)
+✅ Health checks bajo carga (300 requests total)
+
+💾 BACKUPS VERIFICADOS:
+✅ Backup manual funcionando
+✅ Restore reproducible
+✅ Datos de productos y clientes preservados
+
+📊 DASHBOARD CREADO:
+✅ Panel de CPU/Memory por pod
+✅ Panel de logs por aplicación
+✅ Métricas en tiempo real
+
+🎯 SLA INTERNO PROPUESTO:
+• Disponibilidad: ≥ 99.5% (4.38h downtime/mes)
+• Latencia p95: ≤ 500ms para APIs
+• MTTR: ≤ 15 minutos
+• Presupuesto de error: 0.5% (3.6h/mes)
+
+✅ SECCIÓN 5 COMPLETADA
