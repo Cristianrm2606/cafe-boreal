@@ -11,8 +11,8 @@
 - Repositorio Git inicializado
 
 ### Responsables
-- Estudiante 1: [Nombre]
-- Estudiante 2: [Nombre]
+- Estudiante 1: [Cristian]
+- Estudiante 2: [Justin]
 
 ### Alcance
 - Infraestructura base lista para despliegue de servicios
@@ -35,9 +35,37 @@
 - Funciones SQL para cifrado/descifrado transparente
 
 ### Responsables
-- Estudiante 1: [Nombre]
-- Estudiante 2: [Nombre]
+- Estudiante 1: [Cristian]
+- Estudiante 2: [Justin]
 
 ### Alcance
 - Base de datos lista con datos cifrados para APIs
 - Sistema de backup/restore operativo
+
+
+## [v3-Servicios] - 2025-08-20
+
+### Added
+- ✅ API de Catalog: CRUD completo de productos (20 productos funcionando)
+- ✅ API de Orders: Gestión de pedidos con cálculo automático de totales
+- ✅ API de Customers: CRUD de clientes con descifrado de identidades funcionando
+- ✅ Contenedores Docker no-root para cada API con health checks
+- ✅ Manifiestos K8s con probes, limits/requests, ConfigMaps/Secrets
+- ✅ Services ClusterIP y port-forwarding operativo
+- ✅ 2 réplicas por microservicio para alta disponibilidad
+
+### Verified Working
+- Health checks: catalog-api, orders-api, customers-api ✅
+- Product CRUD: 20 productos disponibles ✅
+- Customer management: identidades cifradas/descifradas ✅
+- Order management: 5 pedidos con totales calculados ✅
+- Database connectivity: PostgreSQL funcionando ✅
+
+### Responsables
+- Estudiante 1: [Cristian]
+- Estudiante 2: [Justin]
+
+### Alcance
+- Microservicios completamente operativos
+- APIs probadas y funcionando via port-forward
+- Conectividad completa con PostgreSQL y cifrado
